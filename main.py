@@ -669,69 +669,6 @@ async def mines(interaction: discord.Interaction, serverhash: str, mines: str):
 
 
 
-        row1 = mine1 + mine2 + mine3 + mine4 + mine5
-        row2 = mine6 + mine7 + mine8 + mine9 + mine10
-        row3 = mine11 + mine12 + mine13 + mine14 + mine15
-        row4 = mine16 + mine17 + mine18 + mine19 + mine20
-        row5 = mine21 + mine22 + mine23 + mine24 + mine25
-        
-        result = f"""
-        Mines
-        {row1}
-        {row2}
-        {row3}
-        {row4}
-        {row5}
-        """
-
-        gamedata = f"""
-        Info
-        ────────────────
-        Mines: {mines}
-        ────────────────
-        :red_square: Is where a bomb could possibly be
-        ────────────────
-        :orange_square: Is a commom pattern of mines
-        ────────────────
-        :green_square: Is showing a Predicton
-        ────────────────
-        :blue_square: Is a 50/50 prediction
-        """
-
-
-        dfile = open("dataRes.txt", "w")
-        dfile.write(result)
-        dfile.close()
-        pfp = ' '
-        em = discord.Embed(color=0x030B33)
-        em.set_thumbnail(url=pfp)
-        em.set_footer(text="Enjoy! • Detect Predictor")
-        em.add_field(name="Your Prediction", value=result)
-        em.add_field(name="Info", value=gamedata)
-        await interaction.response.send_message(embed=em)
-      elif serverhash == rid:
-        dafile = open("dataRes.txt", "r")
-        pfp = ' '
-        em = discord.Embed(color=0x030B33)
-        em.set_thumbnail(url=pfp)
-        em.set_footer(text="Enjoy! • Detect Predictor")
-        em.add_field(name="This Round id has already been used", value=dafile.read())
-        await interaction.response.send_message(embed=em)
-        dafile.close()
-      rfile.close()
-
-
-# PAID MINES ----------------------------------------------------
-
-@bot.tree.error
-async def on_app_command_error(interaction: discord.Interaction, error: app_commands.AppCommandError):
-    if isinstance(error, app_commands.CommandOnCooldown):
-        return await interaction.response.send_message(error, ephemeral = True)
-    elif isinstance(error, app_commands.BotMissingPermissions):
-        return await interaction.response.send_message(error, ephemeral = True)
-    else:
-        await interaction.response.send_message("an error occurred!", ephemeral = True)
-        raise error
 
 
 bot.run("token here")
