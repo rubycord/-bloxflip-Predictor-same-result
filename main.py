@@ -393,31 +393,7 @@ async def on_app_command_error(interaction: discord.Interaction, error: app_comm
         raise error
 
 
-bot.run("MTA0MDMzMTM2NTExMzEzOTI5MQ.Gll-HC.q0d2Mf5NciIAoDAixaWu-NFXhsTHdbjSbip_kc")
-          mine3 = ":green_square:"
-        elif a == 4:
-          mine4 = ":green_square:"
-        elif a == 5:
-           mine5 = ":green_square:"
-        elif a == 6:
-          mine6 = ":green_square:"
-        elif a == 7:
-          mine7 = ":green_square:"
-        elif a == 8:
-          mine8 = ":green_square:"
-        if b == 9:
-          mine9 = ":green_square:"
-        elif b == 10:
-          mine10 = ":green_square:"
-        elif b == 11:
-          mine11 = ":green_square:"
-        elif b == 12:
-          mine12 = ":green_square:"
-        elif b == 13:
-          mine13 = ":green_square:"
-        if c == 14:
-          mine14 = ":green_square:"
-        elif c == 15:
+
           mine15 = ":green_square:"
         elif c == 16:
           mine16 = ":green_square:"
@@ -604,70 +580,6 @@ async def mines(interaction: discord.Interaction, serverhash: str, mines: str):
           mine12 = ":blue_square:"
         if b2 == 15:
           mine1 = ":blue_square:"
-        if b2 == 16:
-          mine1 = ":blue_square:"
-        elif b2 == 17:
-          mine2 = ":blue_square:"
-        elif b2 == 18:
-          mine3 = ":blue_square:"
-        elif b2 == 19:
-          mine4 = ":blue_square:"
-        elif b2 == 20:
-           mine5 = ":blue_square:"
-        elif b2 == 21:
-          mine6 = ":blue_square:"
-        elif b2 == 22:
-          mine7 = ":blue_square:"
-        elif b2 == 23:
-          mine8 = ":blue_square:"
-        elif b2 == 24:
-          mine10 = ":blue_square:"
-        elif b2 == 23:
-          mine11 = ":blue_square:"
-        elif b2 == 24:
-          mine12 = ":blue_square:"
-        elif b2 == 25:
-          mine12 = ":blue_square:"
-
-
-        # grey mines
-
-        if a1 == 26:
-          mine1 = ":orange_square:"
-        elif a1 == 27:
-          mine2 = ":orange_square:"
-        elif a1 == 28:
-          mine3 = ":orange_square:"
-        elif a1 == 29:
-          mine4 = ":orange_square:"
-        elif a1 == 30:
-           mine5 = ":orange_square:"
-        elif a1 == 31:
-          mine6 = ":orange_square:"
-        elif a1 == 32:
-          mine7 = ":orange_square:"
-        elif a1 == 33:
-          mine8 = ":orange_square:"
-        if b1 == 34:
-          mine9 = ":orange_square:"
-        elif b1 == 35:
-          mine10 = ":orange_square:"
-        elif b1 == 36:
-          mine11 = ":orange_square:"
-        elif b1 == 37:
-          mine12 = ":orange_square:"
-        elif b1 == 38:
-          mine13 = ":orange_square:"
-        if c1 == 39:
-          mine14 = ":orange_square:"
-        elif c1 == 40:
-          mine15 = ":orange_square:"
-        elif c1 == 41:
-          mine16 = ":orange_square:"
-        elif c1 == 42:
-          mine17 = ":orange_square:"
-
-
 
 
 
